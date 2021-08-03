@@ -1,0 +1,76 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    
+}
+
+.loginForm {
+    margin: auto;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 10px 30px rgba(0,0,0, .5);
+    background-color: rgba(40, 40, 45, .4);
+}
+
+.loginForm::before {
+    filter: blur(8px);
+}
+
+.compContainer {
+    height: 100%;
+    width: 100%;
+    background-image: url('./images/Neos-Glass-Conference.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input:focus, textarea:focus, select:focus {
+        outline: none;
+      }
+
+
+
+label {
+    font-family: Poppins, sans-serif;
+    font-size: larger;
+    margin-bottom: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+
+.textInput {
+    font-family: Poppins, sans-serif;
+    margin-bottom: 1em;
+    font-size: x-large;
+    border: none;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(40, 40, 45, .5);
+}
+
+.btnContainer {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+button {
+    font-family: Poppins, sans-serif;
+    border-radius: .5em;
+    font-size: large;
+    padding: .5em;
+    background-color: #222125;
+    color: #fff;
+    cursor: pointer;
+}
